@@ -59,3 +59,4 @@
   - Latgalian (ltg):               🟥 (388 words)
   - Klingon (tlh):                 🟥 (270 words)
   - Kinyarwanda (rw):              🟥 (21 words)
+  - bbq (bbq):                     🟥 (x words)

@@ -242,14 +242,12 @@ class Language:
 
 
 @app.route("/")
-def index():
-    return render_template(
-        "index.html",
-        languages=languages,
-        language_codes=language_codes,
-        todays_idx=get_todays_idx(),
-        other_wordles=other_wordles,
-    )
+def language(lang_code='bbq'):
+    if lang_code not in language_codes:
+        return "Language not found"
+    word_list = language_codes_5words[lang_code]
+    language = Language(lang_code, word_list)
+    return render_template("game.html", language=language)
 
 
 @app.route("/stats")
