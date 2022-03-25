@@ -242,7 +242,7 @@ class Language:
 
 
 @app.route("/")
-def language(lang_code='bbq'):
+def index(lang_code='bbq'):
     if lang_code not in language_codes:
         return "Language not found"
     word_list = language_codes_5words[lang_code]
